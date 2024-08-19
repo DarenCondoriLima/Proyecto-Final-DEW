@@ -1,0 +1,105 @@
+/*General*/
+#contentDatos{
+    width: 100%;
+    height: 80vh;
+    background-color: var(--color-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#contentDatosAling{
+    width: 95%;
+    height: 85%;
+    display: flex;
+}
+#contentDatosAling img{
+    width: 40%;
+    height: 100%;
+}
+    /*Datos usuario*/
+#contentDatosUser{
+    width: 58%;
+    margin-left: 2%;
+}
+#contentName{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    color: var(--color-letter-extra);
+}
+.datosItem span:nth-child(1){
+    color: var(--color-letter-extra);
+}
+#contentName div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+#contentName span:nth-child(1){
+    font-size: 2rem;
+    font-weight: bolder;
+}
+#contentName span:nth-child(2){
+    color: var(--color-letter);
+    font-size: 1.5rem;
+}
+.datosItem{
+    width: 100%;
+    height: 18%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.datosItem span:nth-child(1){
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.datosItem span:nth-child(2){
+    font-size: 1.5rem;
+}
+    /*Botones*/
+#contentButtonAling{
+    width: 95%;
+    height: 7%;
+    display: flex;
+    justify-content: center;
+}
+#contentButtonAling input{
+    width: 10%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    background: var(--color-secondary);
+    color: var(--color-letter);
+}
+#contentButtonAling input:hover{
+    background-color: var(--color-extra);
+}
+.datoUserInput{
+    height: 50%;
+    background: transparent;
+    color: var(--color-letter);
+    font-size: 1.5rem;
+}
+#contentButtonAling input:nth-child(3){
+    background-color: rgb(194, 63, 63);
+}
+#contentButtonAling input:nth-child(3):hover{
+    background-color: rgb(190, 99, 99);
+}
+@media only screen and (min-width: 1675px) {
+    #contentName span:nth-child(1), .datosItem span:nth-child(1){
+        font-size: 2.5rem;
+    }
+    .datoUserInput{
+        font-size: 2rem;
+    }
+    #contentName span:nth-child(2), .datosItem span:nth-child(2){
+        font-size: 2rem;
+    }
+    #contentButtonAling input{
+        font-size: 1.5rem;
+    }
+}

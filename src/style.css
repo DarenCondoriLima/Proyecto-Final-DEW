@@ -1,0 +1,243 @@
+:root{
+    --color-letter: #E0E0E0;
+    --color-letter-extra: #9cb9ca;
+    --color-letter-hover: #E63946;
+    --color-primary: #3A3D40;
+    --color-secondary: #212529;
+    --color-extra: #4E4E50;
+    --color-background: #121212;
+}
+body {
+    margin: 0;
+      font-family: 'Exo 2', sans-serif;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/*Body*/
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+/*Header*/
+header{
+    width: 100%;
+    height: 10vh;
+    background-color: var(--color-secondary);
+    display: flex;
+    color: var(--color-letter);
+    z-index: 20;
+    position: fixed;
+}
+#logo{
+    width: 20%;
+    height: 80%;
+    margin: auto 0;
+    margin-left: 10px;
+}
+#logo img{
+    width: 40%;
+    height: 100%;
+}
+#menu{
+    width: 78%;
+    display: flex;
+    margin: 0;
+    margin-left: -20px;
+}
+#menu ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+#menu li a{
+    text-decoration: none;
+    color: var(--color-letter);
+    font-size: 1.2rem;
+    margin-left: 15px;
+}
+#menu li a:hover{
+    color: var(--color-letter-hover);
+    transition: color .3s;
+}
+#menu li:nth-child(5):hover{
+    transform: translateY(-10px);
+    transition: all .2s;
+}
+#menu li.active > a{
+    color: var(--color-letter-hover);
+    font-weight: bolder;
+    border-bottom: 2px var(--color-letter-hover) dashed;
+}
+    /*Registrarse*/
+#subMenu{
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5S;
+    top: 0;
+    margin-left: 15px;
+}
+#subMenu li{
+    width: 100%;
+    display: none;
+}
+#subMenu li a{
+    margin-left: 0px;
+}
+#menu li:hover #subMenu {
+    display: block;
+    top: 100%;
+    left: 0px;
+    visibility: visible;
+    opacity: 1;
+}
+#menu li:hover #subMenu li{
+   display: block;
+}
+#menu li:hover #subMenu {
+    display: block;
+    top: 100%;
+    left: 0px;
+    visibility: visible;
+    opacity: 1;
+}
+#menuUser li.activeUser > a{
+    font-weight: bolder;
+    border-bottom: 2px white dashed;
+}
+#menuUser li.activeUser{
+    background-color: var(--color-letter-hover);
+}
+    /*Menu del usuario*/
+#menuUser{
+    width: auto;
+    margin-top: 20px;
+    max-width: 60px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+#menuUser img{
+    width: 100%;
+    border: 2px black solid; 
+    border-radius: 50px;
+}
+#menuUser ul{
+    width: 160%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: -10px;
+    background-color: var(--color-extra);
+    margin-left: 5px;
+    transition: all .3s;
+    visibility: hidden;
+    opacity: 0;
+}
+#menuUser:hover ul{
+    visibility: visible;
+    opacity: 1;
+}
+#menuUser ul li{
+    width: 100%;
+    text-align: center;
+}
+#menuUser ul li:nth-last-child(1){
+    text-decoration: none;
+    color: var(--color-letter);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+#menuUser ul li:hover{
+    background: var(--color-letter-hover);
+    transition: color .3s;
+}
+#menuUser ul li:hover a{
+    color: var(--color-letter);
+    transition: color .3s;
+}
+#menuUser ul li:nth-last-child(1):hover{
+    color: var(--color-letter);
+    transition: color .3s;
+}
+/*Main*/
+main{
+    width: 100%;
+    overflow-x: hidden;
+}
+audio{
+    display: none;
+}
+.header{
+    height: 10vh;
+    width: 100%;
+}
+/*Footer*/
+footer{
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    background-color: var(--color-secondary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-letter);
+}
+#redesFooter{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#redesFooter svg{
+    width: 50px;
+    height: 50px;
+}
+#redesFooter svg:hover{
+    width: 60px;
+    height: 60px;
+}
+#textFooter{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    text-align: right;
+    margin-right: 20px;
+}
+
+@media only screen and (min-width: 1675px) {
+    /*Header*/
+    #menu li a{
+        font-size: 1.8rem;
+    }
+    #menuUser{
+        width: auto;
+        margin-top: 25px;
+        max-width: 75px;
+    }
+    #menuUser ul{
+        top: 89%;
+    }
+    /*Footer*/
+    footer{
+       font-size: 1.3rem;
+    }
+}

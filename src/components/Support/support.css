@@ -1,0 +1,181 @@
+/*Main*/
+main{
+    background-color: var(--color-background);
+}
+#contentPreguntasAling h2{
+    font-size: 1.8rem;
+    color: var(--color-letter-extra);
+}
+#contentPreguntasAling h2{
+    color: var(--color-letter-extra);
+    font-size: 1.5rem;
+}
+h3{
+    color: var(--color-letter-extra);
+}
+/*Preguntas frecuentes*/
+#contentPreguntas{
+    width: 100%;
+}
+#contentPreguntasAling{
+    width: 90%;
+    margin: 0 auto;
+}
+#contentPreguntasAling h2{
+    padding: 10px 0;
+    text-align: center;
+}
+#cards-support{
+    width: 80%;
+    margin: 0 auto;
+}
+.card-support{
+    width: 100%;
+    border: 2px black solid;
+    border-radius: 15px;
+    background: var(--color-primary);
+    margin-bottom: 15px;
+}
+.cardTitle{
+    position: relative;
+}
+.cardTitle h3{
+    width: 60%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+.icon{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.icon svg{
+    width: 100%;
+    height: 100%;
+}
+.cardTitle hr{
+    width: 98%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    border: 1px black solid;
+}
+.card-support p{
+    font-size: 1.3rem;
+    color: var(--color-letter);
+    padding: 0 10px;
+    padding-bottom: 10px; 
+    display: none;
+}
+
+/*Linea del centro*/
+#lineMid{
+    width: 95%;
+    margin: 0 auto;
+    border: 1px black solid;
+}
+
+/*Formulario*/
+#contentForm-support{
+    width: 100%;
+    height: 65vh;
+}
+#contentFormAling-support{
+    width: 90%;
+    margin: 0 auto;
+}
+#contentFormAling-support h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+#formInputs-support{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+#formTitles-support{
+    display: flex;
+    flex-direction: column;
+}
+#formTitles-support h3{
+    margin: 5px 0;
+}
+#formText-support{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    justify-content: space-around;
+}
+#formText-support input{
+    width: 100%;
+    height: 38%;
+    padding-left: 5px;
+    margin-left: 5px;
+    border: 2px black solid;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    background-color: var(--color-extra);
+    color: var(--color-letter);
+}
+#formQuestion-support{
+    width: 70%;
+    height: 38vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#formQuestion-support div{
+    width: 100%;
+}
+#formQuestion-support h3{
+    margin: 5px 0;
+    text-align: left;
+}
+#formQuestion-support textarea{
+    width: 95%;
+    height: 90%;
+    border: 2px black solid;
+    border-radius: 15px;
+    padding-left: 10px;
+    font-size: 1.3rem;
+    background-color: var(--color-extra);
+    color: var(--color-letter);
+}
+#formButton-support{
+    width: 90%;
+    height: 10%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#formButton-support input{
+    width: 10%;
+    height: 70%;
+    color: var(--color-letter);
+    cursor: pointer;
+    border-radius: 8px;
+    background: var(--color-secondary);
+}
+#formButton-support input:hover{
+    background: var(--color-extra);
+}
+@media only screen and (min-width: 1675px) {
+    /*Preguntas frecuentes*/
+    #contentPreguntasAling h2, #contentFormAling-support h2{
+        font-size: 3rem;
+    }
+    .cardTitle h3,#formTitles-support h3,#formQuestion-support h3{
+        font-size: 1.8rem;
+    }
+    .card-support p, #formText-support input, #formQuestion-support textarea, #formButton-support input{
+        font-size: 1.5rem;
+    }
+    
+}

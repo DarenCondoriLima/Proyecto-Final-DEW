@@ -1,0 +1,99 @@
+/*Form*/
+#contentForm-login{
+    width: 100%;
+    height: 80vh;
+    background-color: var(--color-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contentFormBackground-login{
+    width: 40%;
+    height: 50%;
+    background-color: var(--color-primary);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contentFormBackgroundAling-login{
+    width: 90%;
+    height: 80%;
+}
+    /*Secciones del formulario*/
+#formName-login{
+    margin-top: 10px;
+}
+.form-login {
+    width: 100%;
+    height: 30%;
+    margin: 0 auto;
+}
+.formContents-login{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-login img{
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+.form-login input{
+    width: 80%;
+    height: 50%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+    color: var(--color-letter);
+    border-bottom: 3px white solid;
+}
+.form-login input::placeholder{
+    color: var(--color-letter);
+}
+    /*Botones*/
+#formButtons-login{
+    width: 100%;
+    height: 30%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#formButtons-login input{
+    width: 25%;
+    height: 50%;
+    cursor: pointer;
+    border-radius: 8px;
+    color: var(--color-letter);
+    background: var(--color-secondary);
+    font-size: 1rem;
+}
+#formButtons-login input:hover{
+    background: var(--color-extra);
+}
+#formButtons-login a{
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: var(--color-letter);
+}
+#formButtons-login a:hover{
+    color: var(--color-letter-hover);
+}
+@media only screen and (min-width: 1675px) {
+    .form-login input {
+        font-size: 1.8rem;
+    }
+    .form-login img{
+        width: 50px;
+    }
+    #formButtons-login input{
+        font-size: 1.5rem;
+    }
+    #formButtons-login a{
+        font-size: 1.3rem;
+    }
+}

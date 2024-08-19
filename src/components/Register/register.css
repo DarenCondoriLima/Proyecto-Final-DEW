@@ -1,0 +1,150 @@
+/*Form*/
+#contentForm-register{
+    width: 100%;
+    height: 80vh;
+    background-color: var(--color-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contentFormBackground-register{
+    width: 60%;
+    height: 80%;
+    background-color: var(--color-primary);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contentFormBackgroundAling-register{
+    width: 90%;
+    height: 100%;
+}
+    /*Secciones del formulario*/
+.form-register{
+    width: 100%;
+    height: 13%;
+    margin-top: 10px;
+}
+.formContent-register{
+    width: 48%;
+    height: 100%;
+    float: left;
+}
+.formContent-register:nth-child(1){
+    margin-right: 4%;
+}
+.formContent-register div{
+    height: 100%;
+    display: flex;
+    align-items: end;
+}
+.formContent-register div img{
+    width: 12%;
+    margin-right: 10px;
+}
+.formContent-register input{
+    width: 80%;
+    height: 80%;
+    background: transparent;
+    border: 0;
+    outline: none;
+    font-size: 1.3rem;
+    color: var(--color-letter);
+    border-bottom: 3px white solid;
+}
+.formContent-register input::placeholder{
+    color: var(--color-letter);
+}
+.formContent-register svg{
+    width: 30px;
+    height: 30px;
+}
+.formContentEmail-register{
+    width: 100%;
+}
+.formContentEmail-register div img{
+    width: 6%;
+}
+#formFile-register{
+    height: 30%;
+}
+.formContentFile-register{
+    width: 100%;
+    margin-right: 0px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--color-extra);
+    border-radius: 15px;
+
+}
+#emailContent{
+    width: 90%;
+}
+.formContentFile-register:nth-child(1){
+    margin-right: 0%;
+}
+.formContentFile-register input{
+    display: none;
+}
+    /* Estilo para el label que actuará como el botón personalizado */
+#fileLabel-register {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--color-primary);
+    color: var(--color-letter);
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+    /* Estilo para el texto que muestra el nombre del archivo */
+#fileName-register {
+    font-size: 16px;
+    vertical-align: middle;
+}
+    /*Botones*/
+#formButtons-register{
+    width: 100%;
+    height: 20%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#formButtons-register input{
+    width: 18%;
+    height: 50%;
+    cursor: pointer;
+    border-radius: 8px;
+    background: var(--color-secondary);
+    color: var(--color-letter);
+}
+#formButtons-register input:hover{
+    background: var(--color-extra);
+}
+#formButtons-register a{
+    text-decoration: none;
+    color: var(--color-letter);
+}
+#formButtons-register a:hover{
+    color: var(--color-letter-hover);
+}
+@media only screen and (min-width: 1675px) {
+    .formContent-register input{
+        font-size: 1.8rem;
+    }
+    .formContentFile-register{
+        font-size: 1.8rem;
+    }
+    #formButtons-register input{
+        font-size: 1.5rem;
+    }
+    #formButtons-register a{
+        font-size: 1.3rem;
+    }
+}

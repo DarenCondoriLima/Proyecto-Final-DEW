@@ -1,0 +1,191 @@
+/*Search*/
+#contentSearch-games{
+    width: 100%;
+    height: 15vh;
+    background-color: var(--color-background);
+    color: var(--color-letter);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contentElementsSearch-games{
+    position: relative;
+    width: 30%;
+    height: 40%;
+}
+#contentElementsSearch-games input{
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    padding-left: 40px;
+    border-radius: 40px;
+    font-size: 1.3rem;
+}
+#contentElementsSearch-games svg{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    width: 30px;
+    transform: translateY(-50%);
+    z-index: 1;
+    pointer-events: none; /*Esto evita que la imagen interfiera con el funcionamiento del input*/
+}
+/*Principal*/
+#contentPrincipal{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-background);
+    color: var(--color-letter);
+    display: flex;
+}
+    /*Filter*/
+#contentFilter{
+    width: 20%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 2px  white solid;
+    color: var(--color-letter);
+}
+#titleFilter{
+    font-size: 1.3rem;
+    font-weight: bolder;
+    color: var(--color-letter-extra);
+}
+#contentPrice{
+    width: 80%;
+}
+#contentElementPrices{
+    padding-left: 30px;
+    display: flex;
+}
+.elementFilterPrice{
+    display: flex;
+    flex-direction: column;
+}
+.elementFilterPrice span:nth-child(1), .elementFilterPrice input:nth-child(1){
+    margin-bottom: 5px;
+}
+.elementFilterPrice input{
+    margin-left: 15px;
+    width: 45px;
+}
+#generos{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.itemGeneros{
+    padding-left: 30px;
+    text-decoration: none;
+    color: var(--color-letter);
+}
+.itemGeneros:hover{
+    text-decoration: underline;
+    color: var(--color-letter-hover);
+}
+    /*Games*/
+#contentGames{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contentGamesTitle{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: var(--color-letter-extra);
+}
+.card-games{
+    width: 90%;
+    height: 15%;
+    margin-top: 15px;
+    border: 3px black solid;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-letter);
+    background-color: var(--color-primary);
+    font-size: 1.2rem;
+    position: relative;
+}
+.card-games:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.card-games:hover span,.card-games:hover p{
+    color: var(--color-letter-hover);
+}
+.card-games img{
+    height: 100%;
+    width: 20%;
+    margin-left: 5px;
+}
+.card-games p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-left: 50px;
+}
+.card-games span{
+    position: absolute;
+    right: 30px;
+}
+
+#numberPage{
+    display: flex;
+    margin-top: 15px;
+}
+#numberPage ul{
+    list-style: none;
+    display: flex;
+}
+#numberPage ul a{
+    text-decoration: none;
+    color: var(--color-letter);
+    margin-left: 5px;
+}
+#numberPage ul a:hover{
+    text-decoration: underline;
+}
+#numberPage svg{
+    width: 20px;
+}
+#arrow-right{
+    margin-left: 5px;  
+}
+#arrow-left{
+    transform: rotate(180deg);
+}
+@media only screen and (min-width: 1675px) {
+    /*Aside Filtros*/
+    #titleFilter {
+        font-size: 2rem;
+    }
+    .elementFilterPrice span, .itemGeneros{
+       font-size: 1.5rem;
+    }
+    .elementFilterPrice {
+        justify-content: space-evenly;
+    }
+    .elementFilterPrice input {
+        height: 32%;
+    }
+    /*Cards*/
+    #contentGamesTitle {
+        font-size: 3rem;
+    }
+    .card-games{
+        height: 14%;
+    }
+    .card-games p, .card-games span {
+        font-size: 1.8rem;
+    }
+    #numberPage ul a{
+        font-size: 1.5rem;
+    }
+    #numberPage svg {
+        width: 30px;
+    }
+}
